@@ -1,0 +1,214 @@
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+
+    
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Assets/Images/icons/image (1).png" />
+
+</head>
+
+<body>
+    <header style="background-color: hsl(104, 76%, 87%);">
+        <div class="card small">
+            <div class="card-image">
+                <img src="http://materializecss.com/images/sample-1.jpg" alt="image of traveling">
+            </div>
+        </div>
+        <h1 class="globalHeader">
+            Global Seek: Know Before You Go
+        </h1>
+        <h2 class="travel">
+            Travel & News
+        </h2>
+    </header>
+
+    <main>
+        <section>
+            <div class="light-blue white-text darken-2" id="search-section">
+                <h3>
+                    Where do you want to know about:
+                </h3>
+                <div id="search-input">
+                    <input type="text" placeholder="Enter City Here" />
+                    <button class="btn waves-effect waves-light btn-large purple darken-3 orange-text"><i
+                            class="material-icons left">airplanemode_active
+                        </i>Search</button>
+                </div>
+            </div>
+            <div class="rSection rDisplay">
+                <h3>
+                    Results:
+                </h3>
+                <section class="options">
+                    <div class="opts">
+                        <h4>Events</h4>
+                        <div class="events">
+                            <div id="articles">
+                                <a class="event-links event-link-1" target="_blank">
+                                    <h5 class="event-title-1"></h5>
+                                </a>
+                                <p class="event-info-1"></p>
+                            </div>
+                            <div id="articles">
+                                <a class="event-links event-link-2" target="_blank">
+                                    <h5 class="event-title-2"></h5>
+                                </a>
+                                <p class="event-info-2"></p>
+                            </div>
+                            <div id="articles">
+                                <a class="event-links event-link-3" target="_blank">
+                                    <h5 class="event-title-3"></h5>
+                                </a>
+                                <p class="event-info-3"></p>
+                            </div>
+                            <div id="articles">
+                                <a class="event-links event-link-4" target="_blank">
+                                    <h5 class="event-title-4"></h5>
+                                </a>
+                                <p class="event-info-4"></p>
+                            </div>
+                            <div id="article5">
+                                <a class="event-links event-link-5" target="_blank">
+                                    <h5 class="event-title-5"></h5>
+                                </a>
+                                <p class="event-info-5"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opts">
+                        <h4>Currency Converter</h4>
+                        <div class="currency"></div>
+                        <div class="wrapper">
+                            <form class="currency-form" action="#">
+                                <div class="amount">
+                                    <h5>Enter Amount</h5>
+                                    <input class="exchange-input" type="text" value="1">
+                                </div>
+                                <div class="drop-list">
+                                    <div class="from">
+                                        <h5>From</h5>
+                                        <div class="select-box">
+                                            <img class="flags" src="./Assets/Images/Flags/us.png" alt="flag">
+                                            <select class="select-display"> <!-- Options tag are inserted from JavaScript --> </select>
+                                        </div>
+                                    </div>
+                                    <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                                    <div class="to">
+                                        <h5>To</h5>
+                                        <div class="select-box">
+                                            <img class="flags" src="./Assets/Images/Flags/ca.png" alt="flag">
+                                            <select class="select-display"> <!-- Options tag are inserted from JavaScript --> </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="exchange-rate">Getting exchange rate...</div>
+                                <button class="button button-outline">Get Exchange Rate</button>
+                            </form>
+                          </div>
+                    </div>
+                    <div class=" opts">
+                                    <h4>Weather</h4>
+                                    <div class="weather">
+                                        <div id="weather-card">
+                                            <h5 id="date-1"></h5>
+                                            <div id="emoji-1"></div>
+                                            <div>
+                                                Temp: <span id="current-temp-1"></span>
+                                            </div>
+                                            <div>
+                                                Wind: <span id="wind-1"></span>
+                                            </div>
+                                            <div>
+                                                Humidity: <span id="humidity-1"></span>
+                                            </div>
+                                        </div>
+                                        <div id="weather-card">
+                                            <h5 id="date-2"></h5>
+                                            <div id="emoji-2"></div>
+                                            <div>
+                                                Temp: <span id="current-temp-2"></span>
+                                            </div>
+                                            <div>
+                                                Wind: <span id="wind-2"></span>
+                                            </div>
+                                            <div>
+                                                Humidity: <span id="humidity-2"></span>
+                                            </div>
+                                        </div>
+                                        <div id="weather-card">
+                                            <h5 id="date-3"></h5>
+                                            <div id="emoji-3"></div>
+                                            <div>
+                                                Temp: <span id="current-temp-3"></span>
+                                            </div>
+                                            <div>
+                                                Wind: <span id="wind-3"></span>
+                                            </div>
+                                            <div>
+                                                Humidity: <span id="humidity-3"></span>
+                                            </div>
+                                        </div>
+                                        <div id="weather-card">
+                                            <h5 id="date-4"></h5>
+                                            <div id="emoji-4"></div>
+                                            <div>
+                                                Temp: <span id="current-temp-4"></span>
+                                            </div>
+                                            <div>
+                                                Wind: <span id="wind-4"></span>
+                                            </div>
+                                            <div>
+                                                Humidity: <span id="humidity-4"></span>
+                                            </div>
+                                        </div>
+                                        <div id="weather-card">
+                                            <h5 id="date-5"></h5>
+                                            <div id="emoji-5"></div>
+                                            <div>
+                                                Temp: <span id="current-temp-5"></span>
+                                            </div>
+                                            <div>
+                                                Wind: <span id="wind-5"></span>
+                                            </div>
+                                            <div>
+                                                Humidity: <span id="humidity-5"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="favs ">
+            <h3>
+                Favorites:
+            </h3>
+            <div class="favorites"></div>
+        </section>
+    </main>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+    <!-- CDN example (jsDelivr) -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/advancedFormat.js"></script>
+    <script>dayjs.extend(window.dayjs_plugin_advancedFormat)</script>
+
+    <script src="./Assets/JavaScript/script.js"></script>
+</body>
+
+</html>
